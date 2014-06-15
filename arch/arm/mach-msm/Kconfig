@@ -3100,6 +3100,13 @@ config KRAIT_REGULATOR
 	 line from the PMIC. This supply line is powered by multiple
 	 regulators running in ganged mode inside the PMIC. Enable
 	 this option to support such configurations.
+
+config CPU_OC_ENABLE
+	bool "Enable overclocking"
+	default n
+	help
+	 Enable overclocking the CPU till 1.6 GHz
+
 endif
 
 config SIM_DETECT_FEATURE
