@@ -63,3 +63,4 @@ fs_initcall(cpufreq_gov_powersave_init);
 module_init(cpufreq_gov_powersave_init);
 #endif
 module_exit(cpufreq_gov_powersave_exit);
+
