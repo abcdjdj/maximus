@@ -10,3 +10,4 @@ cp arch/arm/boot/zImage $TARGET_DIR
 cd $TARGET_DIR
 ./generate_dt.sh
 . makeit.sh $KERNEL_NAME
+echo PRODUCT :- $(pwd)/$KERNEL_NAME.img
