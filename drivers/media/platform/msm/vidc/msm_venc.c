@@ -2022,9 +2022,6 @@ static int try_set_ctrl(struct msm_vidc_inst *inst, struct v4l2_ctrl *ctrl)
 		pdata = &enable;
 		break;
 	}
-	case V4L2_CID_MPEG_VIDC_VIDEO_REQUEST_SEQ_HEADER:
-		atomic_inc(&inst->get_seq_hdr_cnt);
-		break;
 	default:
 		rc = -ENOTSUPP;
 		break;
